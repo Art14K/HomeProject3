@@ -1,10 +1,12 @@
 class Dog extends Animal {
-    public Dog() {
-        food = "Кости";
-        location = "Тверь";
+    private String name;
+    public Dog(String food, String location, String name) {
+        this.food = food;
+        this.location = location;
+        this.name = name;
     }
     void out_name() {
-        System.out.println("Собаку зовут Тузик");
+        System.out.println("Собаку зовут " + name);
 
     }
 

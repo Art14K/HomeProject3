@@ -1,6 +1,7 @@
-class Animal (String food, String location) {
-    private this.food = food;
-    private this.location;
+// Класс Animal
+class Animal {
+    protected String food;
+    protected String location;
 
     void out_name() {
         System.out.println("Нет имени");
@@ -20,4 +21,8 @@ class Animal (String food, String location) {
     }
 
 }
+
+
+
+
 

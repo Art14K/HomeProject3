@@ -1,12 +1,13 @@
 class Cat extends Animal {
-    public Cat(String name) {
+    private String name;
+    public Cat(String food, String location, String name) {
         this.food = food;
         this.location = location;
         this.name = name;
     }
 
     void out_name() {
-        System.out.println("Кошку зовут Мурка");
+        System.out.println("Кошку зовут " + name);
 
     }
 

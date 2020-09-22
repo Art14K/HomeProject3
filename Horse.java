@@ -1,11 +1,13 @@
 class Horse extends Animal {
-    public Horse() {
-        food = "Сено";
-        location = "Деревня";
+    private String name;
+    public Horse(String food, String location, String name) {
+        this.food = food;
+        this.location = location;
+        this.name = name;
     }
 
     void out_name() {
-        System.out.println("Лошадь зовут Зорька");
+        System.out.println("Лошадь зовут " + name);
     }
 
     void makeNoise() {
